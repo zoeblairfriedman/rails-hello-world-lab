@@ -191,3 +191,29 @@ app/controllers/static_controller.rb:4:in `hello_world'
   Rendering /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (18.1ms)
   Rendered /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (42.4ms)
+Started GET "/hello_world" for ::1 at 2021-03-08 12:00:59 -0500
+Processing by StaticController#hello_world as HTML
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/hello_world, application/hello_world with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/ZBF/Development/code/phaseThree/rails-hello-world-lab/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `hello_world'
+  Rendering /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/ZBF/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (96.9ms)
+Started GET "/hello_world" for ::1 at 2021-03-08 12:03:52 -0500
+Processing by StaticController#hello_world as HTML
+  Rendering static/hello_world.html.erb within layouts/application
+  Rendered static/hello_world.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 691ms (Views: 690.4ms | ActiveRecord: 0.0ms)
+
+
